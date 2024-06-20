@@ -1,0 +1,13 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 72px);
+    margin-top: 72px; 
+    background-image: url('/assets/img/homepage/sfondo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
