@@ -11,3 +11,134 @@
     align-items: center;
     color: white;
 }
+
+.hero-content {
+    display: flex; 
+    width: 100%;
+    margin: 0px 40px;
+}
+
+
+section .left-column,
+.right-column {
+    flex: 1;
+}
+
+section .left-column {
+    margin-right: 20px;
+}
+
+.hero .left-column .h3-slim {
+    margin-bottom: 16px;
+}
+
+.hero .left-column h1 {
+    margin-bottom: 34px;
+}
+
+.hero .left-column .cta-buttons .button-primary {
+    margin-right: 16px;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Work section styles */
+.work-section {
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.work-section h2 {
+    margin-bottom: 80px;
+}
+
+.work-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.work-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-align: left;
+    max-width: calc(50% - 20px); /* Imposta una larghezza massima per le card */
+    overflow: hidden; /* Per evitare che il contenuto trabocchi */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #5995EF;
+    border-radius: 20px;
+}
+
+.card-content {
+    padding: 32px;
+}
+
+.card-content h4 {
+    margin-bottom: 16px;
+}
+
+.card-content p {
+    margin-bottom: 18px;
+}
+
+.card-ta-ux {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #BBD6FF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #5995EF;
+}
+
+.card-tag-html {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #EBBDFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #D571FF;
+}
+
+.work-card.single {
+    margin: 0 auto;
+}
+
+.work-card.single .card-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 417px; 
+    border: 1px solid  #5995EF;
+    border-radius: 20px;
+}
