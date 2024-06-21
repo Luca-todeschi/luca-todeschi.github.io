@@ -5,12 +5,6 @@
     font-family: inter;
 }
 
-/* BODY */
-
-body {
-    height: 3000px;
-}
-
 /* HEADER */
 
 header {
@@ -24,6 +18,7 @@ header {
     align-items: center;
     height: 72px;
     padding: 0px 40px;
+    z-index: 100;
 }
 
 nav {
@@ -57,7 +52,7 @@ nav {
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #BBD6FF;
 }
 
 /* FONT */
@@ -98,6 +93,14 @@ h3 {
     font-size: 18px;
     line-height: 27px;
 }
+
+.body-large-bold {
+    color: black;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+}
+
 
 /* BUTTON */
 
@@ -157,4 +160,43 @@ h3 {
 .button-secondary:active {
     background-color: black;
     color: white;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 72px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right p {
+    margin-right: 32px;
+    font-size: 16px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
 }

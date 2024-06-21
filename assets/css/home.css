@@ -78,8 +78,8 @@ section .left-column {
     border-radius: 8px;
     margin: 0 10px;
     text-align: left;
-    max-width: calc(50% - 20px); /* Imposta una larghezza massima per le card */
-    overflow: hidden; /* Per evitare che il contenuto trabocchi */
+    max-width: calc(50% - 20px); 
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
     
@@ -90,6 +90,27 @@ section .left-column {
     height: auto;
     border: 1px solid #5995EF;
     border-radius: 20px;
+
+}
+
+.work-card a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.work-card a:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #5995EF 0%, rgba(89, 149, 239, 0%) 100%);
+    border-radius: 20px;
+    transition: background 1s ease;
+    
 }
 
 .card-content {
@@ -142,3 +163,35 @@ section .left-column {
     border: 1px solid  #5995EF;
     border-radius: 20px;
 }
+
+/* Contact me */
+
+.contact-section {
+    width: 100%;
+    height: 31.7vw;
+    background-image: url('/assets/img/homepage/sfondo\ contattami.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.contact-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.contact-content h2 {
+    margin-bottom: 8px;
+    
+}
+
+.contact-content h3 {
+    margin-bottom: 32px;
+}
+
+
