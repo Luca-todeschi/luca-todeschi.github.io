@@ -55,6 +55,13 @@ nav {
     color: #BBD6FF;
 }
 
+.nav-links a.about-me:active,
+.nav-links a.about-me:visited {
+    color: #CADDFA;
+}
+
+
+
 /* FONT */
 
 h1 {

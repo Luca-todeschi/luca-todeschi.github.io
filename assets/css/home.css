@@ -169,7 +169,7 @@ section .left-column {
 .contact-section {
     width: 100%;
     height: 31.7vw;
-    background-image: url('/assets/img/homepage/sfondo\ contattami.svg');
+    background-image: url('/assets/img/homepage/sfondo-contattami.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
