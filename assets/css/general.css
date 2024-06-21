@@ -52,12 +52,11 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #BBD6FF;
+    text-decoration: underline;
 }
 
-.nav-links a.about-me:active,
-.nav-links a.about-me:visited {
-    color: #CADDFA;
+.nav-links a.active {
+    text-decoration: underline;
 }
 
 

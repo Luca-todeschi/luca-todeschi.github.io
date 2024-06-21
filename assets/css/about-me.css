@@ -1,0 +1,82 @@
+/* HEADER */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 2.5%; /* Responsive padding */
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem; /* Responsive font size */
+    padding-left: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem; /* Responsive margin */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Responsive font size */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* ABOUT ME SECTION */
+.about-me-section {
+    margin-top: calc(60px + 72px); /* Account for fixed header and additional space */
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr; /* Grid layout */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about-me-container {
+    grid-column: 2 / 3; /* Center content */
+}
+
+.kit-image {
+    width: 10vw; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me-section h2 {
+    margin-top: 1.25rem; /* Responsive margin */
+    font-size: 2rem; /* Responsive font size */
+}
+
+.about-me-section p {
+    margin-top: 0.625rem; /* Responsive margin */
+    font-size: 1rem; /* Responsive font size */
+}
