@@ -69,7 +69,7 @@ section .left-column {
 .work-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
 }
 
 .work-card {
@@ -151,18 +151,19 @@ section .left-column {
 
 .work-card.single {
     margin: 0 auto;
+    text-align: center; /* Centra il testo e l'immagine orizzontalmente */
 }
 
-.work-card.single .card-placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+.work-card.single img {
     width: 100%;
-    height: 417px; 
-    border: 1px solid  #5995EF;
+    height: auto;
+    max-width: 100%; /* Assicura che l'immagine non superi la larghezza della card */
+    max-height: 100%; /* Assicura che l'immagine non superi l'altezza della card */
     border-radius: 20px;
 }
+
+
+
 
 /* Contact me */
 
