@@ -44,7 +44,8 @@
     <link rel="stylesheet" href="assets/css/home.css">
 
     <!-- Collegamento fogli di stile Media Query -->
-    <link rel="stylesheet" href="/assets/css/styles-720-1200.css">
+    <link rel="stylesheet" href="/assets/css/styles-768-1200.css">
+    <link rel="stylesheet" href="/assets/css/styles-max-767.css">
 
 </head>
 
@@ -58,8 +59,14 @@
             Luca.
         </a>
         <nav>
+            <!-- Hamburger menu button -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <!-- Nav bar -->
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#lavori">Lavori</a></li>
                 <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#cv">CV</a></li>
@@ -158,6 +165,15 @@
             </div>
         </div>
     </footer>
+
+      <!-- Fine del corpo HTML -->
+    <!-- Inserisci il JavaScript prima della chiusura del tag </body> -->
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        });
+    </script>
 
 
 

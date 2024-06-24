@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+
+    /* ///////////////////////////// HOMEPAGE ////////////////////////// */
+
+    /* NAVBAR */
+
+    .nav-logo {
+        
+        padding-left: 0px;
+    }
+
+    .header {
+        padding: 0px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 12px 0px;
+        border-bottom: 1px solid black;
+        /* Linea tra le voci */
+    }
+
+    .nav-links a {
+        color: black;
+        /* Testo nero */
+        text-decoration: none;
+        padding: 16px 0;
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        /* Mostra l'icona del menu hamburger */
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Mostra il menu a comparsa */
+    }
+
+    /* Hero section */
+
+    .hero .hero-content .left-column h3 {
+        font-size: 16px;
+    }
+
+    .hero .hero-content .left-column h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+
+    .hero {
+        height: calc(100vh - 72px);
+        /* Altezza automatica per adattarsi al contenuto */
+        padding-top: 20px;
+        /* Spazio superiore aggiuntivo */
+        padding-bottom: 20px;
+        /* Spazio inferiore aggiuntivo */
+
+        width: 100%;
+        margin-top: 72px;
+        background-image: url('/assets/img/homepage/background-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        color: white;
+
+
+    }
+
+    .hero .left-column .h3-slim {
+        margin-bottom: 8px;
+    }
+    
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        /* Layout a colonna per il contenuto */
+        align-items: center;
+        /* Allinea al centro verticalmente */
+        ;
+
+    }
+
+    .hero .left-column {
+        margin-bottom: 24px;
+        /* Spazio inferiore tra i titoli e i pulsanti */
+    }
+
+    .hero .left-column h1 {
+        margin-bottom: 24px;
+    }
+
+    .hero .cta-buttons {
+        margin-top: 16px;
+        /* Spazio superiore per i pulsanti */
+    }
+
+    .right-column {
+        padding: 0;
+        /* Rimuove il padding intorno all'immagine */
+    }
+
+    .hero .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        /* Layout a colonna per i pulsanti */
+        align-items: stretch;
+        /* Allinea i pulsanti per la larghezza massima */
+        margin-top: 16px;
+    }
+
+    .hero .cta-buttons a {
+        width: 100%;
+        /* Pulsanti larghi al 100% */
+        margin-bottom: 12px;
+        /* Spazio inferiore tra i pulsanti */
+    }
+
+    .right-column {
+        display: none;
+        /* Nasconde l'immagine nella colonna destra */
+    }
+
+    .button-primary,
+    .button-secondary {
+        text-align: center;
+    }
+
+}
