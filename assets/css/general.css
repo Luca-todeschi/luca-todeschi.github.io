@@ -107,6 +107,11 @@ h3 {
     font-weight: bold;
 }
 
+.body-small {
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+}
 
 /* BUTTON */
 
