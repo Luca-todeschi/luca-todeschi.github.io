@@ -196,10 +196,6 @@ nav {
     display: contents;
 }
 
-.information-about-me .empty {
-    /* Vuoto per mantenere la griglia */
-}
-
 .information-about-me .image-container-about-me {
     display: flex;
     justify-content: center;
