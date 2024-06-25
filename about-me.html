@@ -37,29 +37,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
 
     <!-- Collegamento fogli di stile -->
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/about-me.css">
   
     <!-- Collegamento fogli di stile Media Query -->
-   <link rel="stylesheet" href="/assets/css/styles-768-1200.css">
+   <link rel="stylesheet" href="assets/css/styles-768-1200.css">
+   <link rel="stylesheet" href="assets/css/styles-max-767.css">
 
 <!-- /////////////// INIZIA QUI /////////////// -->
 
 <body>
     <!-- Header -->
+    <!-- Header -->
     <header>
-        <a href="/index.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             Luca.
         </a>
         <nav>
+            <!-- Hamburger menu button -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <!-- Nav bar -->
-            <ul class="nav-links">
-                <li><a href="/index.html#lavori">Lavori</a></li>
-                <li><a class="about-me active" href="/about.html">About Me</a></li>
-                <li><a href="/cv.html">CV</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Lavori</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="#cv">CV</a></li>
             </ul>
         </nav>
     </header>
@@ -69,7 +77,7 @@
         <div class="about-me-container">
             <div></div>
             <div>
-                <img src="/assets/img/about-me/lampagina-ridotta.png" alt="Kit Image" class="kit-image">
+                <img src="assets/img/about-me/lampagina-ridotta.png" alt="Kit Image" class="kit-image">
                 <h2>Creative Kit</h2>
                 <p class="body-large">Vuoi scoprire di più su di me? <span class="evident">Passa il mouse</span>, oppure <span class="evident">tieni premuto</span> ogni
                     elemento del mio Kit per ottenere tutte le informazioni!</p>
@@ -84,7 +92,7 @@
     <div class="grid-container">
         <div class="grid-item">
             <div class="image-wrapper">
-                <img src="/assets/img/about-me/art.svg" alt="Square Image" class="square-image">
+                <img src="assets/img/about-me/art.svg" alt="Square Image" class="square-image">
                 <div class="overlay">
                     <p class="title body-large-bold">Creatività</p>
                     <p class="description body-small">Amo l'arte e la creatività! Trovo estremamente divertente l'atto di creare, cercando sempre di mettere un pizzico di me in ogni cosa che realizzo!</p>
@@ -93,7 +101,7 @@
         </div>
         <div class="grid-item">
             <div class="image-wrapper">
-                <img src="/assets/img/about-me/vision.jpg" alt="Full Width Image" class="full-width-image">
+                <img src="assets/img/about-me/vision.jpg" alt="Full Width Image" class="full-width-image">
                 <div class="overlay">
                     <p class="title body-large-bold">Tecnologia</p>
                     <p class="description body-small">Amo la tecnologia, non c'è niente di più entusiasmante che scoprire e imparare a utilizzare un nuovo dispositivo o esplorare le potenzialità di una nuova intelligenza artificiale.</p>
@@ -102,7 +110,7 @@
         </div>
         <div class="grid-item">
             <div class="image-wrapper">
-                <img src="/assets/img/about-me/notebook.jpg" alt="Half Width Image 1" class="half-width-image">
+                <img src="assets/img/about-me/notebook.jpg" alt="Half Width Image 1" class="half-width-image">
                 <div class="overlay">
                     <p class="title body-large-bold">Studio</p>
                     <p class="description body-small">Durante il master su Start2impact, ho riscoperto la passione per lo studio,gni occasione è perfetta per arricchire il proprio bagaglio personale.</p>
@@ -111,7 +119,7 @@
         </div>
         <div class="grid-item">
             <div class="image-wrapper">
-                <img src="/assets/img/about-me/television.jpg" alt="Half Width Image 2" class="half-width-image">
+                <img src="assets/img/about-me/television.jpg" alt="Half Width Image 2" class="half-width-image">
                 <div class="overlay">
                     <p class="title body-large-bold">Film & Serie TV</p>
                     <p class="description body-small">Sono da sempre un appassionato di cinema e serie TV. Se cerchi qualcuno con cui discutere dell'ultimo episodio, sono la persona giusta!</p>
@@ -172,8 +180,15 @@
         </div>
     </footer>
 
+         <!-- Fine del corpo HTML -->
+    <!-- Inserisci il JavaScript prima della chiusura del tag </body> -->
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+    var navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+});
 
-
+    </script>
 
 </body>
 

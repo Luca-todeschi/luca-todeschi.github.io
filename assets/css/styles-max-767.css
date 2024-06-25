@@ -5,7 +5,7 @@
     /* NAVBAR */
 
     .nav-logo {
-        
+
         padding-left: 0px;
     }
 
@@ -48,7 +48,7 @@
         /* Mostra il menu a comparsa */
     }
 
-    /* Hero section */
+    /* /////////Hero section //////////*/
 
     .hero .hero-content .left-column h3 {
         font-size: 16px;
@@ -69,7 +69,7 @@
 
         width: 100%;
         margin-top: 72px;
-        background-image: url('/assets/img/homepage/background-mobile.svg');
+        background-image: url('../img/homepage/background-mobile.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -84,7 +84,7 @@
     .hero .left-column .h3-slim {
         margin-bottom: 8px;
     }
-    
+
 
     .hero-content {
         display: flex;
@@ -140,5 +140,193 @@
     .button-secondary {
         text-align: center;
     }
+
+    /*////////// work section////////////*/
+
+    .work-section {
+        margin: 20px;
+        /* Riduci il margine per i dispositivi mobili */
+    }
+
+    .work-section h2 {
+        font-size: 32px;
+        margin: 80px 0px;
+        /* Riduci il margine inferiore dell'intestazione */
+    }
+
+    .work-row {
+        flex-direction: column;
+        /* Disporre le card in una singola colonna */
+        align-items: center;
+        /* Centrare le card orizzontalmente */
+
+        margin-bottom: 0px;
+
+    }
+
+    .work-card {
+        max-width: 100%;
+        /* Assicurati che le card prendano il 100% della larghezza disponibile */
+        margin: 0 0 34px 0;
+        /* Aggiungi spazio inferiore tra le card */
+    }
+
+    .work-card.single {
+        margin: 0px 0px;
+        /* Centra la card singola e aggiungi margini superiori e inferiori */
+    }
+
+    .work-card img {
+        width: 100%;
+        /* Assicurati che le immagini prendano il 100% della larghezza disponibile */
+        height: auto;
+        /* Mantieni le proporzioni delle immagini */
+    }
+
+    .card-content {
+        padding: 16px;
+        /* Riduci il padding del contenuto delle card */
+    }
+
+    .card-content h4 {
+        margin-bottom: 12px;
+        /* Riduci il margine inferiore del titolo */
+    }
+
+    .card-content p {
+        margin-bottom: 12px;
+        /* Riduci il margine inferiore del paragrafo */
+    }
+
+    /*////////// contact me ////////////*/
+
+    .contact-section .contact-content h2 {
+        font-size: 24px;
+    }
+
+    .contact-section .contact-content h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .contact-section {
+        width: 100%;
+        height: 248px;
+    }
+
+    .contact-content h2 {
+        margin-bottom: -16px;
+
+    }
+
+    /*////////// footer ////////////*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .footer-left {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .footer-right {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-right p {
+        margin: 24px 0px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons a {
+        margin: 0 16px;
+    }
+
+    /* ////////////////////////// ABOUT ME ////////////////////////// */
+
+    .about-me-section {
+        grid-template-columns: 0fr 1fr 0fr;
+        /* Grid layout */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .kit-image {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .about-me-section h2 {
+        font-size: 32px;
+    }
+
+    .about-me-section p {
+    margin-top: 24px; 
+    text-align: left;
+}
+
+/*////////// HOVER ////////////*/
+
+.content-section {
+    margin: 80px 20px;
+}
+
+.grid-container {
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px; /* 1.56vw on 1280px screen */
+}
+
+.grid-item:hover .overlay {
+    opacity: 0;
+}
+
+.grid-item:hover img {
+    filter: none;
+}
+
+.grid-item:active .overlay {
+    opacity: 1;
+}
+
+.grid-item:active img {
+    filter: blur(10px);
+}
+
+/*////////// INFORMATION ABOUT ME ////////////*/
+.information-about-me {
+    height: 1100px;
+    padding: 0px 20px;
+    background-image: url('../img/about-me/background-mobile.svg');
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.information-about-me .text-container {
+    
+    padding: 20px;
+   
+}
+
+
+
+
+
+
 
 }

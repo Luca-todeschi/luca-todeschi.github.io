@@ -31,21 +31,22 @@
     <meta name="twitter:description" content="Ciao sono Luca, e questo è il mio portfolio di UX/UI design">
     <meta name="twitter:image" content="http://alessiapellicoro.github.io/my-portfolio//assets/images/og-image.png">
 
-    <!-- Font Inter-->
+    <!-- Font Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
+
 
     <!-- Collegamento fogli di stile -->
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
     <!-- Collegamento fogli di stile Media Query -->
-    <link rel="stylesheet" href="/assets/css/styles-768-1200.css">
-    <link rel="stylesheet" href="/assets/css/styles-max-767.css">
+    <link rel="stylesheet" href="assets/css/styles-768-1200.css">
+    <link rel="stylesheet" href="assets/css/styles-max-767.css">
 
 </head>
 
@@ -55,7 +56,7 @@
 
     <!-- Header -->
     <header>
-        <a href="#homepage" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             Luca.
         </a>
         <nav>
@@ -67,8 +68,8 @@
             </div>
             <!-- Nav bar -->
             <ul class="nav-links" id="nav-links">
-                <li><a href="#lavori">Lavori</a></li>
-                <li><a href="/about-me.html">About Me</a></li>
+                <li><a href="index.html">Lavori</a></li>
+                <li><a href="about-me.html">About Me</a></li>
                 <li><a href="#cv">CV</a></li>
             </ul>
         </nav>
@@ -170,9 +171,10 @@
     <!-- Inserisci il JavaScript prima della chiusura del tag </body> -->
     <script>
         document.getElementById('hamburger-menu').addEventListener('click', function () {
-            var navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('show');
-        });
+    var navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+});
+
     </script>
 
 
