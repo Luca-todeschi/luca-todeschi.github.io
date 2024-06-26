@@ -47,28 +47,26 @@
    <link rel="stylesheet" href="assets/css/styles-768-1200.css">
    <link rel="stylesheet" href="assets/css/styles-max-767.css">
 
+   <!-- Icon -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <!-- /////////////// INIZIA QUI /////////////// -->
 
 <body>
     <!-- Header -->
-    <!-- Header -->
-    <header>
-        <a href="index.html" class="nav-logo">
-            Luca.
-        </a>
-        <nav>
-            <!-- Hamburger menu button -->
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <!-- Nav bar -->
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Lavori</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="#cv">CV</a></li>
-            </ul>
+    <header class="header">
+        <a href="index.html" class="logo">Luca.</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Lavori</a>
+            <a id="active" href="about-me.html" style="--i:1;">About me</a>
+            <a href="#" style="--i:2;">CV</a>
         </nav>
     </header>
 
