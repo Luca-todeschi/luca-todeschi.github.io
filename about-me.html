@@ -11,25 +11,18 @@
 
     <!-- Tags SEO -->
     <meta name="description" content="Ciao sono Luca, e questo è il mio portfolio di UX/UI design" />
-    <link rel="canonical" href="da inserire più avanti" />
+    <link rel="canonical" href="https://luca-todeschi.github.io/my-website/" />
 
-    <!-- Facebook Meta Tags DA MODIFICARE UNA VOLTA FINITO -->
-    <meta property="og:url" content="https://alessiapellicoro.github.io/my-portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio | Luca Todeschi">
-    <meta property="og:description" content="Ciao sono Luca, e questo è il mio portfolio di UX/UI design">
-    <meta name="image" property="og:image"
-        content="http://alessiapellicoro.github.io/my-portfolio//assets/images/og-image.png">
-    <meta property="og:image:url" content="http://alessiapellicoro.github.io/my-portfolio//assets/images/og-image.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Meta Tags DA MODIFICARE UNA VOLTA FINITO-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Portfolio | Luca Todeschi">
-    <meta name="twitter:description" content="Ciao sono Luca, e questo è il mio portfolio di UX/UI design">
-    <meta name="twitter:image" content="http://alessiapellicoro.github.io/my-portfolio//assets/images/og-image.png">
+     <!-- Open graph-->
+     <meta property="og:type" content="website" />
+     <meta property="og:title" content="Luca Todeschi | Portolio" />
+     <meta property="og:description" content="Ciao sono Luca, e questo è il mio portfolio di UX/UI design" />
+     <meta property="og:url" content="https://luca-todeschi.github.io/my-website/" />
+ 
+     <meta property="og:image" content="https://luca-todeschi.github.io/my-website/assets/img/opengraph/image-opengraph.jpg" />
+     <meta property="og:image:width" content="1200" />
+     <meta property="og:image:height" content="627" />
+     <meta property="og:image:alt" content="Minimal and modern portfolio cover image." />
 
     <!-- Font Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,6 +170,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('.grid-item').forEach(item => {
+            let touchStart = 0;
+    
+            item.addEventListener('touchstart', function(event) {
+                event.preventDefault();
+                if (touchStart === 0) {
+                    this.classList.add('active');
+                    touchStart = Date.now();
+                } else {
+                    let now = Date.now();
+                    if (now - touchStart < 500) {
+                        this.classList.remove('active');
+                    }
+                    touchStart = 0;
+                }
+            });
+        });
+    </script>
 
 
 </body>
