@@ -54,7 +54,14 @@ section .left-column {
     height: auto;
 }
 
-/* Work section styles */
+#work-section:before {
+    content: "";
+    display: block;
+    height: 21vh; /* Altezza relativa all'altezza della finestra */
+    margin-top: -21vh; /* Compensazione negativa della stessa altezza */
+}
+
+
 .work-section {
     margin-top: 80px;
     text-align: center;

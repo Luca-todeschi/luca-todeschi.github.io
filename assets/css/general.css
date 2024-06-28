@@ -5,6 +5,9 @@
     font-family: inter;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* HEADER */.header {

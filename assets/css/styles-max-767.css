@@ -27,7 +27,6 @@
         width: 100%;
         height: 0;
         background: white;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
         transition: .3s ease;
       }
@@ -63,8 +62,14 @@
 
     /* /////////Hero section //////////*/
 
+    #work-section:before {
+        height: 10vh; /* Altezza relativa all'altezza della finestra */
+        margin-top: -10vh; /* Compensazione negativa della stessa altezza */
+    }
+
     .hero .hero-content .left-column h3 {
         font-size: 16px;
+        line-height: 24px;
     }
 
     .hero .hero-content .left-column h1 {
@@ -220,6 +225,7 @@
     .contact-section .contact-content h3 {
         font-size: 18px;
         font-weight: 400;
+        line-height: 27px;
     }
 
     .contact-section {
