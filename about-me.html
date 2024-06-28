@@ -104,7 +104,7 @@
                 <img src="assets/img/about-me/notebook.jpg" alt="Half Width Image 1" class="half-width-image">
                 <div class="overlay">
                     <p class="title body-large-bold">Studio</p>
-                    <p class="description body-small">Durante il master su Start2impact, ho riscoperto la passione per lo studio,ogni occasione è perfetta per arricchire il proprio bagaglio personale.</p>
+                    <p class="description body-small">Durante il master su Start2impact, ho riscoperto la passione per lo studio, ogni occasione è perfetta per arricchire il proprio bagaglio personale.</p>
                 </div>
             </div>
         </div>
@@ -170,27 +170,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelectorAll('.grid-item').forEach(item => {
-            let touchStart = 0;
-    
-            item.addEventListener('touchstart', function(event) {
-                event.preventDefault();
-                if (touchStart === 0) {
-                    this.classList.add('active');
-                    touchStart = Date.now();
-                } else {
-                    let now = Date.now();
-                    if (now - touchStart < 500) {
-                        this.classList.remove('active');
-                    }
-                    touchStart = 0;
-                }
-            });
-        });
-    </script>
-
 
 </body>
 
