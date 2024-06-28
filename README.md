@@ -1,10 +1,10 @@
-#Il sito web di Luca Todeschi
+## **Il sito web di Luca Todeschi**
 
 Ciao, sono Luca Todeschi, un aspirante UX/UI Designer e studente presso Start2impact. Questo è il mio sito web di portfolio.
 
 Questo progetto è stato realizzato durante il corso HTML & CSS, uno dei progetti affrontati nel master di Start2impact, con l’obiettivo di creare il mio sito portfolio.
 
-#Struttura del sito web**
+**Struttura del sito web**
 
 Questo sito ha lo scopo di mostrare alle aziende i miei lavori e le mie competenze, consultabili nella Homepage.
 
