@@ -283,7 +283,7 @@
     }
 
     #for-Mobile-tablet {
-        display: block ;
+        display: grid;
     }
 
     #for-desktop {
