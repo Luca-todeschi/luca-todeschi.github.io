@@ -131,6 +131,14 @@
         display: none;
     }
 
+    .content-section .grid-container .grid-item .image-wrapper .overlay .description {
+        padding-bottom: 10px;
+    }
+    
+    .content-section .grid-container .grid-item .image-wrapper .overlay .title {
+        padding-top: 8px;
+    }
+
     /* IMAGES HOVER */
 
     .grid-container {
