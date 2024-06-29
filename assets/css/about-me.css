@@ -16,6 +16,10 @@
     margin-right: 40px;
 }
 
+#for-Mobile-tablet {
+    display: none;
+}
+
 .about-me-container {
     grid-column: 2 / 3; /* Center content */
 }

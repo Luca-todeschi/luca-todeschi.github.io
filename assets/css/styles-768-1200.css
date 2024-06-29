@@ -125,27 +125,28 @@
 
     /* IMAGES HOVER */
 
-    .content-section {
-        margin: 80px 30px;
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Una colonna per dispositivi mobili */
     }
 
-    .grid-item:hover .overlay {
-        opacity: 0;
+    .grid-item {
+        height: auto; /* Altezza automatica per adattarsi al contenuto */
+    }
+
+    .image-wrapper {
+        flex-direction: column; /* Assicura che l'immagine e l'overlay siano in colonna */
+    }
+
+    .overlay {
+        position: static; /* Posizione statica per renderlo visibile sotto l'immagine */
+        opacity: 1; /* L'overlay è visibile senza effetto di trasparenza */
+        backdrop-filter: none; /* Rimuovi il filtro di sfondo */
+        padding: 10px; /* Riduci lo spazio tra il testo e il bordo dell'immagine */
+        margin-top: 10px; /* Margine superiore per separare le card */
+        flex-shrink: 0; /* Impedisce che l'overlay si riduca */
     }
     
-    .grid-item:hover img {
-        filter: none;
-    }
-
-    .grid-item:active .overlay {
-        opacity: 1;
-    }
-    
-    .grid-item:active img {
-        filter: blur(10px);
-    }
-
-    /* IMAGES HOVER */
+    /* ABOUT ME */
 
     .information-about-me {
         width: 100%;

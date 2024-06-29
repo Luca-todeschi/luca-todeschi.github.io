@@ -282,6 +282,14 @@
         margin-right: 20px;
     }
 
+    #for-Mobile-tablet {
+        display: block ;
+    }
+
+    #for-desktop {
+        display: none;
+    }
+
     .kit-image {
         width: 60px;
         height: 60px;
@@ -298,32 +306,25 @@
 }
 
 /*////////// HOVER ////////////*/
-
-.content-section {
-    margin: 80px 20px;
-}
-
 .grid-container {
-    
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px; /* 1.56vw on 1280px screen */
+    grid-template-columns: 1fr; /* Una colonna per dispositivi mobili */
 }
 
-.grid-item:hover .overlay {
-    opacity: 0;
+.grid-item {
+    height: auto; /* Altezza automatica per adattarsi al contenuto */
 }
 
-.grid-item:hover img {
-    filter: none;
+.image-wrapper {
+    flex-direction: column; /* Assicura che l'immagine e l'overlay siano in colonna */
 }
 
-.grid-item:active .overlay {
-    opacity: 1;
-}
-
-.grid-item:active img {
-    filter: blur(10px);
+.overlay {
+    position: static; /* Posizione statica per renderlo visibile sotto l'immagine */
+    opacity: 1; /* L'overlay è visibile senza effetto di trasparenza */
+    backdrop-filter: none; /* Rimuovi il filtro di sfondo */
+    padding: 10px; /* Riduci lo spazio tra il testo e il bordo dell'immagine */
+    margin-top: 10px; /* Margine superiore per separare le card */
+    flex-shrink: 0; /* Impedisce che l'overlay si riduca */
 }
 
 /*////////// INFORMATION ABOUT ME ////////////*/
