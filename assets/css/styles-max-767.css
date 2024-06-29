@@ -327,6 +327,17 @@
     flex-shrink: 0; /* Impedisce che l'overlay si riduca */
 }
 
+.content-section .grid-container .grid-item .image-wrapper .overlay .description {
+    padding-bottom: 10px;
+}
+
+.content-section .grid-container .grid-item .image-wrapper .overlay .title {
+    padding-top: 8px;
+}
+
+
+
+
 /*////////// INFORMATION ABOUT ME ////////////*/
 .information-about-me {
     height: 1100px;
