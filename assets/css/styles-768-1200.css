@@ -131,14 +131,6 @@
         display: none;
     }
 
-    .content-section .grid-container .grid-item .image-wrapper .overlay .description {
-        padding-bottom: 10px;
-    }
-    
-    .content-section .grid-container .grid-item .image-wrapper .overlay .title {
-        padding-top: 8px;
-    }
-
     /* IMAGES HOVER */
 
     .grid-container {
@@ -160,6 +152,14 @@
         padding: 10px; /* Riduci lo spazio tra il testo e il bordo dell'immagine */
         margin-top: 10px; /* Margine superiore per separare le card */
         flex-shrink: 0; /* Impedisce che l'overlay si riduca */
+    }
+
+    .content-section .grid-container .grid-item .image-wrapper .overlay .description {
+        padding-bottom: 10px;
+    }
+    
+    .content-section .grid-container .grid-item .image-wrapper .overlay .title {
+        padding-top: 8px;
     }
 
     
