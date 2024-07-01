@@ -1,14 +1,15 @@
-/* HEADER */
+/* ///////////////////////////// HEADER ////////////////////////// */
 
 .nav-links a.active {
     text-decoration: underline;
 }
 
-/* ABOUT ME SECTION */
+/* ///////////////////////////// ABOUT ME ////////////////////////// */
+
 .about-me-section {
-    margin-top: calc(60px + 72px); /* Account for fixed header and additional space */
+    margin-top: calc(60px + 72px);
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr; /* Grid layout */
+    grid-template-columns: 0.5fr 1fr 0.5fr; 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -21,7 +22,7 @@
 }
 
 .about-me-container {
-    grid-column: 2 / 3; /* Center content */
+    grid-column: 2 / 3; 
 }
 
 .kit-image {
@@ -43,7 +44,7 @@
     padding: 0px 2px;
 }
 
-/* IMAGES HOVER */
+/* ///////////////////////////// IMAGE HOVER ////////////////////////// */
 
 .content-section {
     margin: 80px 6.95%;
@@ -53,7 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px; /* 1.56vw on 1280px screen */
+    gap: 20px; 
 }
 
 .grid-item {
@@ -84,7 +85,7 @@
     justify-content: start;
     align-items: left;
     text-align: left;
-    padding: 20px; /* 1.56vw on 1280px screen */
+    padding: 20px; 
 }
 
 .grid-item:hover .overlay {
@@ -100,7 +101,8 @@
 }
 
 
-/* INFORMATION ABOUT ME */
+/* ///////////////////////////// INFORMATION ABOUT ME ////////////////////////// */
+
 .information-about-me {
     width: 100%;
     height: 482px;
@@ -124,7 +126,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Aggiungi questa riga per occupare l'intera altezza */
+    height: 100%;
 }
 
 .information-about-me .image-container-about-me img {
@@ -132,7 +134,7 @@
     max-height: 433px;
     height: auto;
     width: auto;
-    object-fit: contain; /* Mantiene le proporzioni */
+    object-fit: contain; 
     border-radius: 100%;
 }
 
@@ -141,7 +143,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 100%; /* Aggiungi questa riga per occupare l'intera altezza */
+    height: 100%;
 }
 
 .information-about-me .text-container p {
@@ -150,4 +152,3 @@
     line-height: 1.5;
     color: #333;
 }
-

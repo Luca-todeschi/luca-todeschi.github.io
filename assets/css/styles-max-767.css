@@ -6,21 +6,21 @@
 
     .icons {
         display: inline-flex;
-      }
-    
-      #check:checked~.icons #menu-icon {
+    }
+
+    #check:checked~.icons #menu-icon {
         display: none;
-      }
-    
-      .icons #close-icon {
+    }
+
+    .icons #close-icon {
         display: none;
-      }
-    
-      #check:checked~.icons #close-icon {
+    }
+
+    #check:checked~.icons #close-icon {
         display: block;
-      }
-    
-      .navbar {
+    }
+
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -29,13 +29,13 @@
         background: white;
         overflow: hidden;
         transition: .3s ease;
-      }
-    
-      #check:checked~.navbar {
+    }
+
+    #check:checked~.navbar {
         height: 261px;
-      }
-    
-      .navbar a {
+    }
+
+    .navbar a {
         color: black;
         display: block;
         font-size: 18px;
@@ -47,24 +47,24 @@
         opacity: 0;
         transition: .3s ease;
         margin: 0px;
-      }
-    
-      #check:checked~.navbar a {
+    }
+
+    #check:checked~.navbar a {
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
-      }
+    }
 
-      #active {
+    #active {
         text-decoration: none;
         text-underline-offset: 8px;
     }
 
-    /* /////////Hero section //////////*/
+    /* HERO SECTION */
 
     #work-section:before {
-        height: 10vh; /* Altezza relativa all'altezza della finestra */
-        margin-top: -10vh; /* Compensazione negativa della stessa altezza */
+        height: 10vh;
+        margin-top: -10vh;
     }
 
     .hero .hero-content .left-column h3 {
@@ -79,12 +79,8 @@
 
     .hero {
         height: calc(100vh - 72px);
-        /* Altezza automatica per adattarsi al contenuto */
         padding-top: 20px;
-        /* Spazio superiore aggiuntivo */
         padding-bottom: 20px;
-        /* Spazio inferiore aggiuntivo */
-
         width: 100%;
         margin-top: 72px;
         background-image: url('../img/homepage/background-mobile.svg');
@@ -107,16 +103,13 @@
     .hero-content {
         display: flex;
         flex-direction: column;
-        /* Layout a colonna per il contenuto */
         align-items: center;
-        /* Allinea al centro verticalmente */
         ;
 
     }
 
     .hero .left-column {
         margin-bottom: 24px;
-        /* Spazio inferiore tra i titoli e i pulsanti */
     }
 
     .hero .left-column h1 {
@@ -125,33 +118,26 @@
 
     .hero .cta-buttons {
         margin-top: 16px;
-        /* Spazio superiore per i pulsanti */
     }
 
     .right-column {
         padding: 0;
-        /* Rimuove il padding intorno all'immagine */
     }
 
     .hero .cta-buttons {
         display: flex;
         flex-direction: column;
-        /* Layout a colonna per i pulsanti */
         align-items: stretch;
-        /* Allinea i pulsanti per la larghezza massima */
         margin-top: 16px;
     }
 
     .hero .cta-buttons a {
         width: 100%;
-        /* Pulsanti larghi al 100% */
         margin-bottom: 12px;
-        /* Spazio inferiore tra i pulsanti */
     }
 
     .right-column {
         display: none;
-        /* Nasconde l'immagine nella colonna destra */
     }
 
     .button-primary,
@@ -159,64 +145,51 @@
         text-align: center;
     }
 
-    /*////////// work section////////////*/
+    /* WORK SECTION */
 
     .work-section {
         margin: 20px;
-        /* Riduci il margine per i dispositivi mobili */
     }
 
     .work-section h2 {
         font-size: 32px;
         margin: 80px 0px;
-        /* Riduci il margine inferiore dell'intestazione */
     }
 
     .work-row {
         flex-direction: column;
-        /* Disporre le card in una singola colonna */
         align-items: center;
-        /* Centrare le card orizzontalmente */
-
         margin-bottom: 0px;
 
     }
 
     .work-card {
         max-width: 100%;
-        /* Assicurati che le card prendano il 100% della larghezza disponibile */
         margin: 0 0 34px 0;
-        /* Aggiungi spazio inferiore tra le card */
     }
 
     .work-card.single {
         margin: 0px 0px;
-        /* Centra la card singola e aggiungi margini superiori e inferiori */
     }
 
     .work-card img {
         width: 100%;
-        /* Assicurati che le immagini prendano il 100% della larghezza disponibile */
         height: auto;
-        /* Mantieni le proporzioni delle immagini */
     }
 
     .card-content {
         padding: 16px;
-        /* Riduci il padding del contenuto delle card */
     }
 
     .card-content h4 {
         margin-bottom: 12px;
-        /* Riduci il margine inferiore del titolo */
     }
 
     .card-content p {
         margin-bottom: 12px;
-        /* Riduci il margine inferiore del paragrafo */
     }
 
-    /*////////// contact me ////////////*/
+    /* CONTACT ME */
 
     .contact-section .contact-content h2 {
         font-size: 24px;
@@ -238,7 +211,7 @@
 
     }
 
-    /*////////// footer ////////////*/
+    /* FOOTER */
 
     .footer {
         display: flex;
@@ -277,7 +250,6 @@
 
     .about-me-section {
         grid-template-columns: 0fr 1fr 0fr;
-        /* Grid layout */
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -301,58 +273,57 @@
     }
 
     .about-me-section p {
-    margin-top: 24px; 
-    text-align: left;
-}
+        margin-top: 24px;
+        text-align: left;
+    }
 
-/*////////// HOVER ////////////*/
-.grid-container {
-    grid-template-columns: 1fr; /* Una colonna per dispositivi mobili */
-}
+    /* HOVER */
 
-.grid-item {
-    height: auto; /* Altezza automatica per adattarsi al contenuto */
-}
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 
-.image-wrapper {
-    flex-direction: column; /* Assicura che l'immagine e l'overlay siano in colonna */
-}
+    .grid-item {
+        height: auto;
+    }
 
-.overlay {
-    position: static; /* Posizione statica per renderlo visibile sotto l'immagine */
-    opacity: 1; /* L'overlay è visibile senza effetto di trasparenza */
-    backdrop-filter: none; /* Rimuovi il filtro di sfondo */
-    padding: 10px; /* Riduci lo spazio tra il testo e il bordo dell'immagine */
-    margin-top: 10px; /* Margine superiore per separare le card */
-    flex-shrink: 0; /* Impedisce che l'overlay si riduca */
-}
+    .image-wrapper {
+        flex-direction: column;
+    }
 
-.content-section .grid-container .grid-item .image-wrapper .overlay .description {
-    padding-bottom: 10px;
-}
+    .overlay {
+        position: static;
+        opacity: 1;
+        backdrop-filter: none;
+        padding: 10px;
+        margin-top: 10px;
+        flex-shrink: 0;
+    }
 
-.content-section .grid-container .grid-item .image-wrapper .overlay .title {
-    padding-top: 8px;
-}
+    .content-section .grid-container .grid-item .image-wrapper .overlay .description {
+        padding-bottom: 10px;
+    }
 
+    .content-section .grid-container .grid-item .image-wrapper .overlay .title {
+        padding-top: 8px;
+    }
 
-
-
-/*////////// INFORMATION ABOUT ME ////////////*/
-.information-about-me {
-    height: 1100px;
-    padding: 0px 20px;
-    background-image: url('../img/about-me/background-mobile.svg');
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-bottom: 80px;
-}
-
-.information-about-me .text-container {
+    /* INFORMATION ABOUT ME */
     
-    padding: 20px;
-   
-}
+    .information-about-me {
+        height: 1100px;
+        padding: 0px 20px;
+        background-image: url('../img/about-me/background-mobile.svg');
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+
+    .information-about-me .text-container {
+
+        padding: 20px;
+
+    }
 
 
 
