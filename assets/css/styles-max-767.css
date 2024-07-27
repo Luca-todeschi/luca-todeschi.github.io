@@ -68,7 +68,7 @@
     }
 
     .hero .hero-content .left-column h3 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -104,7 +104,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        ;
+
 
     }
 
@@ -120,7 +120,7 @@
         margin-top: 16px;
     }
 
-    .right-column {
+    .hero .right-column {
         padding: 0;
     }
 
@@ -136,7 +136,7 @@
         margin-bottom: 12px;
     }
 
-    .right-column {
+    .hero .right-column {
         display: none;
     }
 
@@ -186,30 +186,62 @@
     }
 
     .card-content p {
-        margin-bottom: 12px;
+        margin-bottom: 16px;
+        font-size: 14px;
     }
 
     /* CONTACT ME */
 
-    .contact-section .contact-content h2 {
-        font-size: 24px;
+    .contact-section {
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/homepage/background-mobile-contattami.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        padding: 80px 20px;
     }
 
-    .contact-section .contact-content h3 {
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 0fr 1fr 0fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-section .center h2 {
+        font-size: 32px;
+    }
+
+    .contact-section .center h3 {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 27px;
+
     }
 
     .contact-section {
         width: 100%;
-        height: 248px;
+        height: 100%;
     }
 
-    .contact-content h2 {
-        margin-bottom: -16px;
+    .contact-section h2 {
+        margin-bottom: 0px;
 
     }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
 
     /* FOOTER */
 
@@ -309,14 +341,14 @@
     }
 
     /* INFORMATION ABOUT ME */
-    
+
     .information-about-me {
-        height: 1100px;
-        padding: 0px 20px;
+        height: 100%;
+        padding: 80px 20px;
         background-image: url('../img/about-me/background-mobile.svg');
         grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 80px;
+        gap: 0px;
+
     }
 
     .information-about-me .text-container {
@@ -324,6 +356,136 @@
         padding: 20px;
 
     }
+
+    .information-about-me .text-container p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+        padding: 32px 0px 0px 0px;
+    }
+
+    /* NUOVA SEZIONE */
+
+.new-section {
+    margin: 80px 6.95% 24PX;
+}
+
+    .new-section-grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .new-section .right-column,
+    .left-column {
+
+        padding: 0px 0px;
+    }
+
+    .new-section h3 {
+        font-size: 32px;
+
+    }
+
+    .right-column .highlight {
+        position: absolute;
+        top: 57%;
+        left: 0;
+        width: 175px;
+        height: 30%;
+        background-color: #BBD6FF;
+        z-index: 0;
+    }
+
+
+    .left-column .highlight-up {
+        position: absolute;
+        top: 57%;
+        left: 0;
+        width: 184px;
+        height: 30%;
+        background-color: #BBD6FF;
+        z-index: 0;
+    }
+
+    .left-column .highlight-down {
+        position: absolute;
+        top: 57%;
+        left: 0;
+        width: 84px;
+        height: 30%;
+        background-color: #BBD6FF;
+        z-index: 0;
+    }
+
+
+    .new-section h4 {
+        font-size: 18px;
+
+    }
+
+    .experience .body-large {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .experience p {
+        font-size: 14px;
+        /* Esempio di dimensione del font, personalizza in base alle tue esigenze */
+        margin-bottom: 0;
+        /* Aggiungi qui il margine desiderato per il testo del paragrafo */
+        line-height: 21px;
+    }
+
+    .left-column .up {
+        margin-bottom: 24px;
+    }
+    
+
+    /* TOOLS */
+
+    .tool-section {
+        margin: 0px 6.95% 80PX;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool-section .highlighted-heading {
+        margin-bottom: 56px;
+    }
+
+    .tool-section h3 {
+        font-size: 32px;
+    } 
+
+
+    .tool-section .highlight {
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra orizzontalmente */
+        transform: translate(-50%, 20%); /* Aggiusta la posizione per centrare esattamente */
+        width: 209px; /* Aggiusta la larghezza del rettangolo evidenziato in base al contenuto dell'h3 */
+        height: 30%;
+        background-color: #BBD6FF;
+        z-index: 0;
+    }
+
+    .tool-icon {
+        max-width: 40px; /* Dimensione massima della larghezza delle icone */
+        max-height: 40px;
+    }
+
+    .tool-section .highlighted-heading {
+        align-items: flex-start; /* Allinea a sinistra */
+    }
+
+    .tool-section .highlight {
+        left: 0; /* Posiziona l'highlight a sinistra */
+        transform: translate(0, 20%); /* Aggiusta la trasformazione per mantenere la posizione verticale */
+    }
+
 
 
 

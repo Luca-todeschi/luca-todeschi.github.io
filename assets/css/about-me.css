@@ -9,7 +9,7 @@
 .about-me-section {
     margin-top: calc(60px + 72px);
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr; 
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -18,24 +18,24 @@
 }
 
 #for-Mobile-tablet {
-    display: none ;
+    display: none;
 }
 
 .about-me-container {
-    grid-column: 2 / 3; 
+    grid-column: 2 / 3;
 }
 
 .kit-image {
     width: 77px;
-    height: 77px; 
+    height: 77px;
 }
 
 .about-me-section h2 {
-    margin-top: 16px; 
+    margin-top: 16px;
 }
 
 .about-me-section p {
-    margin-top: 24px; 
+    margin-top: 24px;
     text-align: left;
 }
 
@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .grid-item {
@@ -85,7 +85,7 @@
     justify-content: start;
     align-items: left;
     text-align: left;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .grid-item:hover .overlay {
@@ -134,7 +134,7 @@
     max-height: 433px;
     height: auto;
     width: auto;
-    object-fit: contain; 
+    object-fit: contain;
     border-radius: 100%;
 }
 
@@ -151,4 +151,156 @@
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+}
+
+/*//////////////////// NUOVA SEZIONE///////////////// */
+.new-section {
+    margin: 80px 6.95%;
+}
+
+.new-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.right-column,
+.left-column {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px;
+}
+
+.highlighted-heading {
+    position: relative;
+    margin-bottom: 56px;
+}
+
+.highlighted-heading h3 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+.right-column .highlight {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 262px;
+    height: 50%;
+    background-color: #BBD6FF;
+    z-index: 0;
+}
+
+.left-column .highlight-up {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 275px;
+    height: 50%;
+    background-color: #BBD6FF;
+    z-index: 0;
+}
+
+.left-column .highlight-down {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 127px;
+    height: 50%;
+    background-color: #BBD6FF;
+    z-index: 0;
+}
+
+.experience {
+    margin-bottom: 56px;
+    /* Spazio tra le sezioni di esperienza */
+}
+
+.experience h4 {
+    margin-bottom: 16px;
+    /* Spazio sotto l'h4 */
+    position: relative;
+}
+
+.experience .body-large {
+    display: inline-block;
+    color: #007AFF;
+    font-weight: 400;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #007AFF;
+    margin-bottom: 16px;
+    /* Spazio sotto il sottotitolo body-large */
+}
+
+.experience p {
+    font-size: 16px;
+    /* Esempio di dimensione del font, personalizza in base alle tue esigenze */
+    margin-bottom: 0;
+    /* Aggiungi qui il margine desiderato per il testo del paragrafo */
+}
+
+/* ///////////// SKILL /////////// */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* Spazio tra le skill */
+}
+
+.skill {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #007AFF;
+}
+
+/* ///////// TOOL UTILIZZATI ////////// */
+
+.tool-section {
+    margin: 80px 6.95%;
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-section .highlighted-heading {
+    margin-bottom: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-section .highlight {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra orizzontalmente */
+    transform: translate(-50%, 20%); /* Aggiusta la posizione per centrare esattamente */
+    width: 314px; /* Aggiusta la larghezza del rettangolo evidenziato in base al contenuto dell'h3 */
+    height: 50%;
+    background-color: #BBD6FF;
+    z-index: 0;
+}
+
+.tool-icons {
+    display: flex;
+    justify-content: space-between; /* Distribuisce le icone in modo uniforme */
+    align-items: center;
+    width: 100%;
+}
+
+.tool-icon {
+    max-width: 72px; /* Dimensione massima della larghezza delle icone */
+    max-height: 72px;
 }

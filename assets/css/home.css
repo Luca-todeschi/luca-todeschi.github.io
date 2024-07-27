@@ -173,16 +173,19 @@ section .left-column {
     border-radius: 20px;
 }
 
+/* ///////////////////////////// CONTACT SECTION ////////////////////////// */
 
-
-
-/* ///////////////////////////// CONTACT ME ////////////////////////// */
-
+input::placeholder,
+textarea::placeholder {
+    color: #595959; /* Colore del testo del placeholder */
+    font-size: 16px;
+    font-weight: 400; /* Dimensione del font del placeholder */
+}
 
 .contact-section {
     width: 100%;
-    height: 31.7vw;
-    background-image: url('../img/homepage/sfondo-contattami.svg');
+    height: 100%;
+    background-image: url('../img/homepage/sfondo-contattami2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -190,19 +193,92 @@ section .left-column {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    padding: 80px 0px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.text-content {
+    margin-bottom: 32px;
 }
 
 .contact-content {
-    text-align: center;
     color: white;
-    padding: 20px;
 }
 
-.contact-content h2 {
-    margin-bottom: 8px;
-
-}
-
-.contact-content h3 {
+.text-content h2 {
     margin-bottom: 32px;
 }
+
+.text-content h3 {
+    margin-bottom: 32px;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    line-height: 28px;
+    border: 1px solid #5995EF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.form-group textarea {
+    height: calc(4 * 44px); /* Altezza 4 volte quella degli input */
+    resize: none; /* Disabilita il ridimensionamento */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.button-primary {
+    border: none;
+}
+
+
+
+

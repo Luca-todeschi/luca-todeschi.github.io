@@ -128,15 +128,37 @@
         </div>
 
     </section>
-
-    <!-- Contact section -->
-    <section class="contact-section">
-        <div class="contact-content">
-            <h2>Hai bisogno di me?</h2>
-            <h3 class="h3-slim">Clicca qui! Prometto di rispondere. 😁</h3>
-            <a href="mailto:luca.todeschi93@gmail.com" class="button-primary">Contattami</a>
+<!-- Contact section -->
+<section class="contact-section">
+    <div class="contact-grid">
+        <div class="left"></div>
+        <div class="center">
+            <div class="text-content">
+                <h2>Hai bisogno di me?</h2>
+                <h3 class="h3-slim">Clicca qui! Prometto di rispondere. 😁</h3>
+            </div>
+            <div class="form-content">
+                <form action="https://formsubmit.co/tuo-email@example.com" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" id="name" name="name" required placeholder="Scrivi il tuo nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Indirizzo Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Scrivi la tua email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" name="message" required placeholder="Scrivi il tuo messaggio"></textarea>
+                    </div>
+                    <button type="submit" class="button-primary">Invia</button>
+                </form>
+            </div>
         </div>
-    </section>
+        <div class="right"></div>
+    </div>
+</section>
+
 
     <!-- Footer section -->
     <footer class="footer">
