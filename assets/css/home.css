@@ -162,7 +162,7 @@ section .left-column {
 
 .work-card.single {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .work-card.single img {
